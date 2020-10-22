@@ -1,0 +1,198 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 10%;
+  min-height: 70px;
+  box-shadow: 2px 2px 5px lightgray;
+}
+.header__form {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 35px;
+  padding: 4px 10px;
+}
+.header__form:hover {
+  box-shadow: 1px 1px 5px lightgray;
+}
+.header__form > button:nth-child(1) {
+  width: 220px;
+  padding: 12px 5px;
+  border: 0px;
+  background: none;
+  color: black;
+  text-align: left;
+  font-size: 14.5px;
+}
+.header__form > button:nth-child(2) {
+  background: none;
+  background: #ff385c;
+  border-radius: 100px;
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  color: white;
+}
+.header__center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header__center__search {
+  position: relative;
+}
+.header__center__search > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+.header__center__search > div:nth-child(1) > button {
+  padding: 15px 12px 12px 12px;
+  text-transform: inherit;
+  position: relative;
+  background: none;
+  font-size: 16px;
+  color: #222222;
+}
+.header__center__search > div:nth-child(1) > button:hover {
+  background-color: none;
+}
+.header__center__search > div:nth-child(1) > button:hover::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 10px;
+  bottom: 0px;
+  left: 50%;
+  background-color: #222222;
+}
+.header__center__searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid lightgray;
+  border-radius: 100px;
+
+  margin-top: 20px;
+}
+.header__center__searchBox > div {
+  height: 65px;
+  cursor: pointer;
+}
+.header__center__searchBox > div:not(:last-child) {
+  padding: 25px 95px 25px 20px;
+}
+
+.header__center__searchBox > div:hover {
+  background: rgba(211, 211, 211, 0.507);
+  border-radius: 100px;
+}
+.header__center__searchBox > div:not(:last-child) {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.header__center__searchBox > div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0px;
+  height: 30px;
+  width: 1px;
+  background: lightgray;
+}
+.header__center__searchBox > div:hover::after {
+  display: none;
+}
+
+.header__center__searchBox > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+}
+.header__center__searchBox > div:nth-child(3) > div:nth-child(1) {
+  flex: 1;
+}
+
+.header__center__searchBox div h5 {
+  color: #515151;
+}
+.header__center__searchBox > div:nth-child(3) {
+  padding: 25px 5px 25px 20px;
+}
+.header__center__searchBox > div:nth-child(3) > div:nth-child(1) {
+  padding-right: 30px;
+}
+.header__center__searchBox > div:nth-child(3) > button {
+  background-color: #ff385c;
+  color: aliceblue;
+  border-radius: 100px;
+  display: grid;
+  padding: 10px;
+}
+.header__center__searchBox > div:nth-child(3) > button:hover {
+  background-color: #d83b58cb;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__right > button:nth-child(1) {
+  padding: 10px !important;
+}
+.header__right > button:nth-child(1),
+.header__right > button:nth-child(2) {
+  background: none;
+  margin-right: 10px;
+  border-radius: 100px;
+  padding: 6px;
+}
+.header__right > button:nth-child(1):hover,
+.header__right > button:nth-child(2):hover {
+  background: rgba(211, 211, 211, 0.24);
+}
+.header__right > button:nth-child(3):hover {
+  box-shadow: 1px 1px 4px gray;
+}
+.header__right > button:nth-child(3) {
+  padding: 6px;
+  background: none;
+  border: 1px solid lightgray;
+  border-radius: 100px;
+  color: gray;
+}
+
+.active {
+  box-shadow: 0px 0px 10px 5px lightgray;
+  background-color: white;
+  border-radius: 150px;
+}
+
+@media only screen and (max-width: 1148px) {
+  .header {
+    padding: 20px 4%;
+  }
+  .header__center__searchBox > div:not(:last-child) {
+    padding: 25px 20px 25px 20px;
+  }
+  .header__center__search {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+  }
+  .inc__height {
+    min-height: 220px;
+  }
+}
+@media only screen and (max-width: 1320px) {
+  .header {
+    padding: 20px 4%;
+  }
+}

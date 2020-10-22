@@ -1,0 +1,36 @@
+.home {
+  background-image: url(../../img/home.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 70vh;
+}
+.home__caption {
+  background: rgba(0, 0, 0, 0.682);
+  max-width: 600px;
+  height: 70vh;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  padding-left: 10%;
+}
+.home__caption > div {
+  max-width: 270px;
+  margin-bottom: 120px;
+}
+.home__caption > div > h1 {
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+.home__caption > div > button {
+  background: #ff5a5f;
+  color: white;
+  margin-top: 20px;
+  text-transform: inherit;
+}
+.home__caption > div > button:hover {
+  background: white;
+  color: #ff385c;
+  opacity: 0.9;
+}
