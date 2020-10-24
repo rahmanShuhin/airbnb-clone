@@ -1,0 +1,81 @@
+.card {
+  border: 0px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+  margin: 10px 8px;
+  cursor: pointer;
+}
+.card > img {
+  object-fit: fill;
+  min-width: 400px;
+  min-height: 200px;
+  width: 100%;
+}
+.card__info {
+  padding: 20px 15px;
+}
+.card__info > h4 {
+  font-size: 18px;
+  color: rgb(34, 34, 34);
+}
+@media only screen and (max-width: 1200px) {
+  .card > img {
+    min-width: 300px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .card > img {
+    min-width: 100px;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card__1 {
+    min-height: 450px;
+    max-height: 450px;
+  }
+  .card__1 > img {
+    min-height: 350px;
+    max-height: 350px;
+    object-fit: fill;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    min-height: 380px;
+    max-height: 3800px;
+  }
+  .card > img {
+    min-height: 250px;
+    max-height: 250px;
+    object-fit: fill !important;
+  }
+  .card__1 {
+    min-height: 400px;
+    max-height: 400px;
+  }
+  .card__1 > img {
+    min-height: 300px;
+    max-height: 300px;
+    object-fit: fill !important;
+  }
+}
+
+.card__1 {
+  color: white;
+  border: 0px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px 8px;
+  cursor: pointer;
+  background-color: #222222;
+}
+.card__1 > img {
+  object-fit: fill;
+  width: 100%;
+}
+.card__info__1 {
+  padding: 20px 15px;
+}

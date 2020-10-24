@@ -3,25 +3,26 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 70vh;
+  min-height: 75vh;
 }
 .home__caption {
   background: rgba(0, 0, 0, 0.682);
-  max-width: 600px;
-  height: 70vh;
+  max-width: 500px;
+  min-height: 75vh;
   display: flex;
   align-items: flex-end;
   color: white;
-  padding-left: 10%;
+  padding-left: 8%;
 }
 .home__caption > div {
   max-width: 270px;
-  margin-bottom: 120px;
+  min-height: fit-content;
+  margin-bottom: 30px;
 }
 .home__caption > div > h1 {
   font-weight: 700;
   font-size: 45px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .home__caption > div > button {
   background: #ff5a5f;
@@ -33,4 +34,12 @@
   background: white;
   color: #ff385c;
   opacity: 0.9;
+}
+@media only screen and (max-width: 767px) {
+  .home {
+    min-height: 65vh;
+  }
+  .home__caption {
+    min-height: 65vh;
+  }
 }

@@ -1,0 +1,112 @@
+.cardContainer__top {
+  padding: 50px 8%;
+  display: flex;
+  justify-content: space-between;
+}
+.cardContainer__top__mobile {
+  display: none;
+}
+.cardContainer__bottom__caption {
+  padding: 50px 8%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardContainer__bottom__caption > div > button {
+  color: white;
+  border: 1px solid white;
+}
+.cardContainer__bottom__caption > div > h2 {
+  font-size: 30px;
+}
+.cardContainer__bottom__caption > div > button:hover {
+  background-color: gray;
+}
+.cardContainer__bottom {
+  display: grid;
+  grid-template-columns: 51% 49%;
+  padding: 0px 8% 50px 8%;
+  background-color: black;
+}
+.grid__2 {
+  display: grid;
+  grid-template-columns: 100%;
+}
+.grid__2Top {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.bg-black {
+  background-color: black;
+}
+.cardContainer__top__mobile__2 {
+  display: none;
+}
+@media only screen and (max-width: 1839px) {
+  .cardContainer__bottom {
+    grid-template-columns: 52% 48%;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .grid__2Bottom {
+    display: none;
+  }
+  .grid__2Top {
+    grid-template-columns: 100%;
+  }
+  .cardContainer__bottom {
+    grid-template-columns: 70% 30%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .cardContainer__top {
+    padding: 50px 2%;
+  }
+  .cardContainer__bottom {
+    padding: 0px 2% 50px 2%;
+  }
+  .cardContainer__bottom__caption {
+    padding: 50px 2%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cardContainer__bottom__caption {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .cardContainer__bottom {
+    display: none;
+  }
+  .cardContainer__top__mobile__2 {
+    display: block;
+    padding: 20px 35px;
+  }
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cardContainer__top {
+    display: none;
+  }
+  .cardContainer__top__mobile {
+    display: block;
+    padding: 20px 25px;
+  }
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
+}
